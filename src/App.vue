@@ -1,36 +1,16 @@
 <template>
-<div>
-  <Nav name="OpenDuka.com" class="sticky"/>
-  <Carousel/>
-  <ProductGridView title="Deals of the day." description="All deals are 60% off!" />
-  <Banner/>
-  <ProductCategoriesGridView title="Our Categories." description="All deals are 60% off!"/>
-  <HorizontalProductScroll/>
-  <Footer/>
+<div> 
+  <router-view />
 </div>
 
 </template>
 
 <script>
-import Nav from './components/Nav.vue'
-import Carousel from './components/Carousel.vue'
-import ProductGridView from './components/ProductGridView.vue'
-import Banner from './components/Banner.vue'
-import ProductCategoriesGridView from './components/ProductCategoriesGridView.vue'
-import Footer from './components/Footer.vue'
-
 
 export default {
-  name: 'App',
-  components: {
-    Nav,
-    Carousel,
-    ProductGridView,
-    Banner,
-    ProductCategoriesGridView,
-    Footer
-  }
+  name: 'App'
 }
+
 </script>
 
 <style>

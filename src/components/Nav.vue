@@ -19,7 +19,7 @@
             <!-- Search -->
             <div class="block py-4 mt-4 lg:inline-block lg:mt-0 lg:py-0 lg:mr-8">
               <div class="relative">
-                <input name="q" class="w-full outline-none rounded shadow-lg appearance-none border pl-10 pr-4 py-2" placeholder="Search for products and shops..." style="width: 460px;" aria-label="Search Input">
+                <input name="q" class="w-full outline-none rounded shadow-lg appearance-none border pl-10 pr-4 py-2" placeholder="Search for products and shops..." style="width: 440px;" aria-label="Search Input">
               </div>
             </div>
           </div>

@@ -6,7 +6,7 @@
     <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
     <div class="carousel-item absolute opacity-0" style="height:80vh;">
       <div class="block h-full w-full bg-green-500 text-white text-5xl text-center">
-         <button class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded" style="width: 290px; margin-top: 560px; padding: 20px;">
+         <button class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded" style="width: 290px; margin-top: 560px; padding: 20px;" @click="navigateToProductFilter()">
           Shop Now!
          </button>
       </div>
@@ -57,6 +57,15 @@
 </template>
 
 <script>
+
+  export default {
+    name: 'Carousel',
+    methods: {
+      navigateToProductFilter() {
+        this.$router.push({ name: 'FilterView', params: { productsCategory: 'category-1' } })
+      }
+    }
+  }
 
 </script>
 
