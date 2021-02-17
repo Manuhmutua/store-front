@@ -10,7 +10,8 @@
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^3.0.0",
-    "vue-router": "^4.0.3"
+    "vue-router": "^4.0.3",
+    "vue-simple-range-slider": "^0.1.10"
   },
   "devDependencies": {
     "@tailwindcss/postcss7-compat": "^2.0.3",

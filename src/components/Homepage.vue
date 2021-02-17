@@ -1,7 +1,7 @@
 <template>
   <Nav name="OpenDuka.com" class="sticky"/>
   <Carousel/>
-  <ProductGridView title="Deals of the day." description="All deals are 60% off!" />
+  <ProductGridView title="Deals of the day." description="All deals are 60% off!" button="Show more" />
   <Banner/>
   <ProductCategoriesGridView title="Our Categories." description="All deals are 60% off!"/>
   <HorizontalProductScroll/>

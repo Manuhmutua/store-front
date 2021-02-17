@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p class="text-black font-bold" style="font-size: 25px; padding-top: 75px; font-style: bold;">
+    <p class="text-black font-bold" style="font-size: 25px; padding-top: 20px; font-style: bold;">
       {{title}}
     </p>
     <p class="text-grey">

@@ -1,13 +1,13 @@
 <template>
   <div>
-    <p class="text-black font-bold" style="font-size: 25px; padding-top: 75px; font-style: bold;">
+    <p class="text-black font-bold" style="font-size: 25px; padding-top: 20px; font-style: bold;">
       {{title}}
     </p>
     <p class="text-grey">
       {{description}}
     </p>
   </div>
-  <div class="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-2" style="padding: 120px;">
+  <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4 gap-2" style="padding-left: 140px; padding-right: 140px; padding-top: 20px;">
  
     <div class="justify-self-center">  
       <ProductCard
@@ -17,6 +17,7 @@
         title="Relaxing All-Inclusive Resort in Cancun"
         pricing="20,000 KSH"
         url="/vacations/cancun"
+        @click="navigateToProduct()"
       />
     </div>
     <div class="justify-self-center">
@@ -113,7 +114,7 @@
   </div>
   <p class="text-grey font-bold hover:text-blue-500" style="padding: 50px;
   ">
-    See All Deals
+    {{button}}
   </p>
 </template>
 
@@ -126,7 +127,12 @@ export default {
   components: {
     ProductCard
   },
-  props: ['title', 'description']
+  props: ['title', 'description','button'],
+  methods: {
+    navigateToProduct() {
+        this.$router.push({ name: 'ProductView', params: { productId: 'product-1' } })
+      }
+  }
 }
 </script>
 
