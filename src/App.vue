@@ -1,15 +1,34 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<div>
+  <Nav name="OpenDuka.com" class="sticky"/>
+  <Carousel/>
+  <ProductGridView title="Deals of the day." description="All deals are 60% off!" />
+  <Banner/>
+  <ProductCategoriesGridView title="Our Categories." description="All deals are 60% off!"/>
+  <HorizontalProductScroll/>
+  <Footer/>
+</div>
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Nav from './components/Nav.vue'
+import Carousel from './components/Carousel.vue'
+import ProductGridView from './components/ProductGridView.vue'
+import Banner from './components/Banner.vue'
+import ProductCategoriesGridView from './components/ProductCategoriesGridView.vue'
+import Footer from './components/Footer.vue'
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Nav,
+    Carousel,
+    ProductGridView,
+    Banner,
+    ProductCategoriesGridView,
+    Footer
   }
 }
 </script>
@@ -21,6 +40,10 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
 }
 </style>
